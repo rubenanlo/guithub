@@ -283,7 +283,7 @@ textarea {
   .details-box {
     margin: 2%;
     background-color: rgba(217, 217, 217, 0.16);
-    border: 1px solid #fffcfc;
+    border: 1px solid var(--tinted-red);
     border-radius: 20px;
     padding: 4%;
     text-align: center;
@@ -315,20 +315,28 @@ textarea {
 
 footer {
   display: flex;
-  width: 95%;
-  height: 2.5vh;
+  /* height: 2.5vh; */
   justify-content: space-between;
+  align-items: center;
   margin: 5vw 2vw 2vw 2vw;
-  font-size: 1.2vw;
 }
 
-#footer-first-part {
-  display: flex;
-}
+  footer p {
+    font-size: 1.2vw;
+  }
 
-#footer-first-part p {
-  margin-right: 1vw;
-}
+  #footer-first-part {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-ironhack {
+    width: 4vw;
+  }
+
+  #footer-first-part p {
+    margin-right: 1vw;
+  }
 
 .guitar-card {
   display: flex;
@@ -385,12 +393,12 @@ footer {
     /* margin: 1vw 5vw 1vw 45vw; */
   }
   #signup {
-    flex-direction: row;
-    row-gap: 0.5vw;
     text-align: center;
-    background-color: var(--dark-gold);
-    border-radius: 20px;
-    margin: 1vw 5.5vw 0 46vw;
-    justify-content: center;
+    background-color: var(--tinted-red);
+    border-radius: 2vw;
+    margin: 5vw 22vw 0 58vw;
+    padding: 1% 0 1% 0;
+    color: #333;
+    font-size: 1.5vw;
   }
 }
