@@ -1,0 +1,27 @@
+<div class='box max-width'>
+  <h1>Your Collection</h1>
+  {{#unless myCollection}}
+    <p id='empty-collection'>You are one step away to see all your beauties,
+      <a href='/profile/create-guitar' style='color:white;'>create one now!</a></p>
+  {{/unless}}
+  <div class='guitars-grid'>
+    {{#each myCollection}}
+      <div class='guitar-card'>
+        <h3>{{nickName}}</h3>
+        {{#if image}}
+          <a href='/profile/guitar/{{id}}'><img src={{image}} alt='first-pic' /></a>
+        {{else}}
+          <a href='/profile/guitar/{{id}}'><img src='/images/guitar-default-img.jpeg' alt='second' /></a>
+        {{/if}}
+        <div id='guitar-info'>
+          <p>Brand: {{brand}}</p>
+          <p>Model: {{model}}</p>
+        </div>
+        <form action='/profile/guitar/{{id}}/delete' method='POST'>
+          <button class='button delete'>Delete</button>
+        </form>
+      </div>
+    {{/each}}
+  </div>
+
+</div>

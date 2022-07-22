@@ -1,0 +1,21 @@
+<div class='box auto-width form-box'>
+  <h1>Welcome {{username}}</h1>
+  {{#if imagePhoto}}
+    <img src={{imagePhoto}} alt='first-pic-prof' />
+  {{else}}
+    <img src='/images/photo-profile.jpeg' alt='alt-pic-prof' />
+  {{/if}}
+
+  <div id='profile-details'>
+    <p>Name: {{name}}</p>
+    <p>Email: {{email}}</p>
+    <p>Born in: {{country}}</p>
+    <p>Artists who I look up to: {{favArtists}}</p>
+    <p>Music genres I cannot live without: {{favGenres}}</p>
+    <p>Other set up I normally work with (amps, pedals, ...): {{setup}}</p>
+    <p>Something you need to know about me: {{description}}</p>
+  </div>
+  <a class='buttonlink' href='/profile/{{_id}}/edit'>
+    <button class='button edit-btn'>Edit</button>
+  </a>
+</div>

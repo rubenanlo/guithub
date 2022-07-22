@@ -1,0 +1,58 @@
+<div class="box auto-width form-box">
+    <h1>Change your profile, {{username}}</h1>
+
+    {{#if errorMessage}}
+        <p class="warning">
+            {{errorMessage}}
+        </p>
+    {{/if}}
+
+    <p>(*) Required fields</p>
+
+    <form class="form" action="/profile/{{_id}}/edit" method="POST" enctype="multipart/form-data">
+
+        <label>Image:
+            <input type="file" name="imagePhoto" />
+        </label>
+
+        <label> 
+            <p>Username: <span>(*)</span></p>
+            <input type="text" name="username" value="{{username}}" required/>
+        </label>
+
+        <label> Name:
+            <input type="text" name="name" value="{{name}}"/> 
+        </label>
+
+        <label>
+            <p>Email: <span>(*)</span></p>
+            <input type="text" name="email" value="{{email}}" required/> 
+        </label>
+
+        <label> Country:
+            <input type="text" name="country" value="{{country}}"/>
+        </label>
+
+        <label> Favorite artists:
+            <input type="text" name="favArtists" value="{{favArtists}}"/>
+        </label>
+
+        <label> Favorite genres:
+            <input type="text" name="favGenres" value="{{favGenres}}"></input>
+        </label>
+
+        <label> Your setup:
+            <input type="text" name="setup" value="{{setup}}"> </input>
+        </label>
+
+        <label for="textarea"> Description:</label>
+        <textarea id="textarea" name="description" cols="20" rows="2"> {{description}}</textarea>
+
+        <div class="row-btns">
+        <button class="button" type="submit"> Change </button> 
+        </div>
+    </form>
+    <form action="/profile/{{_id}}/delete" method="POST">
+        <button class="button delete">Delete</button>
+    </form>
+</div>

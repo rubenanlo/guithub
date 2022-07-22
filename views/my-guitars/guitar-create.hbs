@@ -1,0 +1,63 @@
+<div class="box auto-width form-box">
+<h1>Tell us about your beauty {{user.username}}</h1>
+
+    {{#if errorMessage}}
+        <p class="error">
+            {{errorMessage}}
+        </p>
+    {{/if}}
+
+        <p>(*) Required fields</p>
+
+    <form class="form" action="/profile/create-guitar" method="POST" enctype="multipart/form-data">
+
+        <label>Image:
+            <input type="file" name="image" />
+        </label>
+
+        <label> 
+            <p>Nickname: <span>(*)</span></p>
+            <input class="text-input" type="text" name="nickName" />
+        </label>
+
+        <label> 
+            <p>Brand: <span>(*)</span></p>
+            <input class="text-input" type="text" name="brand" /> 
+        </label>
+
+        <label> 
+            <p>Model: <span>(*)</span></p>
+            <input class="text-input" type="text" name="model" /> 
+        </label>
+
+        <label> Country of origin:
+            <input class="text-input" type="text" name="countryOrigin" />
+        </label>
+
+        <label> Year:
+            <input class="text-input" type="number" name="year" />
+        </label>
+
+        <label for="type">Type of guitar:
+        <select name="type" id="type">
+            {{#each typeOptions}}
+                <option value={{this}}>{{this}}</option>
+            {{/each}}
+        </select>
+        </label>
+
+        <label> Fingerboard Material:
+            <input class="text-input" type='text' name="fingerboardMaterial"></input>
+        </label>
+
+        <label> Pickup Configuration:
+            <input class="text-input" type='text' name="pickupConfig"> </input>
+        </label>
+
+        <label for="textarea"> Please add any artist you know who plays a similar guitar: 
+        </label>
+        <textarea id="textarea" name="artists"></textarea>
+
+        <button class="button" type="submit"> Create </button> 
+    </form>
+</div>

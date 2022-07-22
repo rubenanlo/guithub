@@ -1,0 +1,23 @@
+<div class='box auto-width form-box'>
+  <h1>Sign Up</h1>
+  {{#if errorMessage}}
+    <p class='error'>{{errorMessage}}</p>
+  {{/if}}
+  <form class='form' id='sign-up' action='/auth/signup' method='POST'>
+    <label>
+      Username:
+      <input class='text-input' type='text' name='username' />
+    </label>
+    <label>Email:
+      <input class='text-input' type='email' name='email' />
+    </label>
+    <label>
+      Password:
+      <input class='text-input' type='password' name='password' />
+    </label>
+  </form>
+
+  <p>Already have an account? Log in <a href='/auth/login' class='auth-link'>here</a></p>
+
+  <button class='button' form='sign-up' type='submit'>Submit</button>
+</div>

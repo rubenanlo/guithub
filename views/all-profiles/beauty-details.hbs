@@ -1,0 +1,19 @@
+<div class='box auto-width form-box'>
+  <h1>Admire this beauty</h1>
+
+  {{#if image}}
+    <img src={{image}} alt='first-pic' />
+  {{else}}
+    <img src='/images/guitar-default-img.jpeg' alt='second' />
+  {{/if}}
+  <p>Nickname: {{nickName}}</p>
+  <p>Brand: {{brand}}</p>
+  <p>Model: {{model}}</p>
+  <p>Type of guitar: {{type}}</p>
+  <p>Country where it was produced: {{countryOrigin}}</p>
+  <p>Year: {{year}}</p>
+  <p>Fingerboard material: {{fingerboardMaterial}}</p>
+  <p>Pickup configuration: {{pickupConfig}}</p>
+  <p>Artist/s playing similar type of guitars: {{artists}}</p>
+  <p>Artist: {{user.username}}</p>
+</div>

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/luna-2');
+
+:root {
+  --border-color: #bcbcbc;
+  --shadow-color: #4e4e4e;
+  --text: #ffffff;
+  --dark-red: #85161a;
+  --tinted-red: #B67376;
+  --dark-gold: #D4BE6B;
+  --white-transparent: #d9d9d929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .homepage {
+  position: absolute;
+  max-height: 100%;
+} */
+
+body {
+  /* overflow: hidden; */
+  font: 1vw 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 1vw;
+  background-image: url('../images/cover-image6.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text);
+}
+
+span {
+  align-self: flex-start;
+}
+
+a {
+  color: var(--shadow-color);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2vw;
+  font-size: 1.8vw;
+} */
+
+input[type='file']:hover {
+  cursor: pointer;
+}
+input[type='file' i]:hover {
+  cursor: pointer;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='file'],
+select,
+textarea {
+  padding: 0.3vw 0.5vw;
+}
+
+textarea {
+  resize: none;
+  min-height: 5.5vw;
+}
+
+.error {
+  color: var(--text);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--tinted-red);
+  padding: 3vh 5%;
+  margin-bottom: 3vh;
+  background-color: var(--white-transparent);
+}
+
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.8vw;
+    font-size: 1.5vw;
+  }
+
+  #navbar ul a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #navbar h2 a{
+    font-family: "Luna", sans-serif;
+  }
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  height: 100%;
+}
+
+.box {
+  margin-bottom: 5vw;
+  padding: 2% 4%;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 4px 4px 1px var(--shadow-color);
+  border-radius: 30px;
+  height: 73vh;
+  overflow: auto;
+  background-color: rgba(217, 217, 217, 0.16);
+}
+
+  .box > h1 {
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  #empty-collection {
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  .box > img {
+    border-radius: 30px;
+    max-width: 60%;
+  }
+
+.auto-width {
+  min-width: 30%;
+  max-width: 75%;
+}
+
+.max-width {
+  width: 85%;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 1vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
+  margin: 0.6vw 0;
+}
+
+.form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5vw;
+}
+
+.button {
+  border: none;
+  align-self: center;
+  padding: 0.3vw 0.8vw;
+  font-size: 1vw;
+  border-radius: 10px;
+}
+
+.button:active {
+  box-shadow: inset 0px 0px 4px 0px black;
+}
+
+.button-group {
+  display: flex;
+  margin-top: 2vw;
+  flex-direction: column;
+  row-gap: 1.5vw;
+}
+
+.button-group .button {
+  width: 100%;
+}
+
+.buttonlink {
+  color: black;
+  text-decoration: none;
+}
+
+.edit-btn:active {
+  box-shadow: inset 0px 0px 5px 0px black;
+}
+
+.row-btns {
+  align-self: center;
+  display: flex;
+  column-gap: 10%;
+}
+
+.delete {
+  background-color: var(--dark-red);
+  color: white;
+  border: none;
+}
+
+.delete:active {
+  box-shadow: inset 0px 0px 4px 0px var(--border-color);
+}
+
+.guitars-grid {
+  /* display: grid; */
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  
+  /* grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr)); */
+  /* row-gap: 3vw; */
+}
+
+/* homepage */
+
+#title {
+  text-align: center;
+}
+
+  #title h1 {
+    margin-bottom: 2%;
+    font-size: 4vw;
+  }
+
+  /* #title div:nth-child(1) {
+    margin-left: 2%;
+  }
+
+  #title div:nth-child(2) {
+    margin-left: 20%;
+  } */
+
+#break {
+  text-align: center;
+  color: var(--tinted-red)
+}
+
+#home-middle {
+  margin: 10vw 5vw 0 45vw;
+}
+
+  #description {
+    text-align: center;
+    align-items: center;
+    font-size: 2vw;
+    max-width: 50vw;
+    margin-bottom: 5vw;
+  }
+    
+    .luna-font {
+      font-family: "Luna", sans-serif;
+    }
+
+    .mid-home-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mid-home-container p {
+      margin-right: 1vw;
+    }
+
+  #details {
+    display: flex;
+  }
+    .title-red {
+      color:#E7D0D1;
+    }
+
+  .details-box {
+    margin: 2%;
+    background-color: rgba(217, 217, 217, 0.16);
+    border: 1px solid #fffcfc;
+    border-radius: 20px;
+    padding: 4%;
+    text-align: center;
+    max-width: 40vw;
+    font-size: 1.5vw;
+  }
+    .details-box div {
+      margin-bottom: 5%;
+    }
+
+
+  #signup {
+    text-align: center;
+    background-color: var(--tinted-red);
+    border-radius: 2vw;
+    margin: 5vw 20vw 0 60vw;
+    padding: 1% 0 1% 0;
+    color: #333;
+    font-size: 1.5vw;
+  }
+
+  #signup > a {
+    color: #333;
+  }
+
+.auth-link {
+  color: var(--text);
+}
+
+footer {
+  display: flex;
+  width: 95%;
+  height: 2.5vh;
+  justify-content: space-between;
+  margin: 5vw 2vw 2vw 2vw;
+  font-size: 1.2vw;
+}
+
+#footer-first-part {
+  display: flex;
+}
+
+#footer-first-part p {
+  margin-right: 1vw;
+}
+
+.guitar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0;
+  background-color: rgb(217, 217, 217);
+  color: black;
+  border-radius: 30px;
+  row-gap: 0.6vw;
+  width: 300px;
+  height: 400px;
+}
+
+.guitar-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vw;
+}
+
+.guitar-card > h3 {
+  text-align: center;
+}
+
+.guitar-card > p {
+  font-size: 0.85vw;
+}
+
+.guitar-card > a {
+  max-width: 70%;
+}
+
+.guitar-card > a > img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.guitar-card > form {
+  align-self: center;
+}
+
+#profile-details {
+  display: flex;
+  margin-top:auto;
+  flex-direction: column;
+  row-gap: 0.8vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #details {
+    display: flex;
+    flex-direction: column;
+    /* margin: 1vw 5vw 1vw 45vw; */
+  }
+  #signup {
+    flex-direction: row;
+    row-gap: 0.5vw;
+    text-align: center;
+    background-color: var(--dark-gold);
+    border-radius: 20px;
+    margin: 1vw 5.5vw 0 46vw;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,20 @@
+<div class='box auto-width form-box'>
+  <h1>Log In</h1>
+  {{#if errorMessage}}
+    <p class='error'>{{errorMessage}}</p>
+  {{/if}}
+  <form class='form' id='log-in' action='/auth/login' method='POST'>
+    <label>
+      Username / Email:
+      <input class='text-input' type='text' name='user' />
+    </label>
+    <label>
+      Password:
+      <input class='text-input' type='password' name='password' />
+    </label>
+  </form>
+
+  <p>Don't have an account yet? Sign up <a href='/auth/signup' class='auth-link'>here</a></p>
+
+  <button class='button' form='log-in' type='submit'>Submit</button>
+</div>
