@@ -25,9 +25,10 @@ body {
   /* overflow: hidden; */
   font: 1vw 'Lucida Grande', Helvetica, Arial, sans-serif;
   font-size: 1vw;
-  background-image: url('../images/cover-image6.jpeg');
+  background-image: url('../images/cover-image8.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: var(--text);
 }
 
@@ -80,9 +81,10 @@ textarea {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid var(--tinted-red);
-  padding: 3vh 5%;
+  padding: 1.5vh 5%;
   margin-bottom: 3vh;
-  background-color: var(--white-transparent);
+  background-color: var(--tinted-red);
+  border-radius: 1vw;
 }
 
   #navbar ul {
@@ -100,19 +102,24 @@ textarea {
 
   #navbar h2 a{
     font-family: "Luna", sans-serif;
+    padding-top: 4vw;
+  }
+
+  #navbar h2 {
+    padding-top: 1vw;
   }
 
 #wrapper {
   display: flex;
   justify-content: center;
   overflow: auto;
-  height: 100%;
+  height: 100vw;
 }
 
 .box {
   margin-bottom: 5vw;
   padding: 2% 4%;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--tinted-red);
   box-shadow: 0px 4px 4px 1px var(--shadow-color);
   border-radius: 30px;
   height: 73vh;
@@ -149,13 +156,13 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  row-gap: 1vw;
+  row-gap: 1rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 1vw;
+  row-gap: 1rem;
   margin: 0.6vw 0;
 }
 
@@ -163,7 +170,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 0.5vw;
+  column-gap: 0.5rem;
 }
 
 .button {
@@ -215,13 +222,12 @@ textarea {
 }
 
 .guitars-grid {
-  /* display: grid; */
+  display: grid;
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  
-  /* grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr)); */
-  /* row-gap: 3vw; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 3rem;
 }
 
 /* homepage */
@@ -234,14 +240,6 @@ textarea {
     margin-bottom: 2%;
     font-size: 4vw;
   }
-
-  /* #title div:nth-child(1) {
-    margin-left: 2%;
-  }
-
-  #title div:nth-child(2) {
-    margin-left: 20%;
-  } */
 
 #break {
   text-align: center;
@@ -338,47 +336,47 @@ footer {
     margin-right: 1vw;
   }
 
-.guitar-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1vw 0;
-  background-color: rgb(217, 217, 217);
-  color: black;
-  border-radius: 30px;
-  row-gap: 0.6vw;
-  width: 300px;
-  height: 400px;
-}
-
-.guitar-info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5vw;
-}
-
-.guitar-card > h3 {
-  text-align: center;
-}
-
-.guitar-card > p {
-  font-size: 0.85vw;
-}
-
-.guitar-card > a {
-  max-width: 70%;
-}
-
-.guitar-card > a > img {
-  border-radius: 30px;
-  width: 100%;
-}
-
-.guitar-card > form {
-  align-self: center;
-}
-
+  .guitar-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: rgb(217, 217, 217);
+    color: black;
+    border-radius: 30px;
+    row-gap: 0.6rem;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .guitar-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  
+  .guitar-card > h3 {
+    text-align: center;
+  }
+  
+  .guitar-card > p {
+    font-size: 0.85rem;
+  }
+  
+  .guitar-card > a {
+    max-width: 70%;
+  }
+  
+  .guitar-card > a > img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .guitar-card > form {
+    align-self: center;
+  }
+  
 #profile-details {
   display: flex;
   margin-top:auto;
