@@ -113,7 +113,7 @@ textarea {
   display: flex;
   justify-content: center;
   overflow: auto;
-  height: 100vw;
+  /* height: 100vw; */
 }
 
 .box {
@@ -238,7 +238,7 @@ textarea {
 
   #title h1 {
     margin-bottom: 2%;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
 #break {
