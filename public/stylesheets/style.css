@@ -113,7 +113,7 @@ textarea {
 .box {
   margin-bottom: 5rem;
   padding: 2% 4%;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--tinted-red);
   box-shadow: 0px 4px 4px 1px var(--shadow-color);
   border-radius: 30px;
   height: 73vh;
@@ -224,13 +224,15 @@ textarea {
   row-gap: 3rem;
 }
 
+/* homepage */
+
 #title {
   text-align: center;
 }
 
   #title h1 {
     margin-bottom: 2%;
-    font-size: 1.3rem;
+    font-size: 3vw;
   }
 
 #break {
@@ -239,13 +241,13 @@ textarea {
 }
 
 #home-middle {
-  margin: 10% 2% 0 50%;
+  margin: 5vh 27vw;
 }
 
   #description {
     text-align: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 2vw;
     max-width: 50vw;
     margin-bottom: 5vw;
   }
@@ -265,6 +267,7 @@ textarea {
 
   #details {
     display: flex;
+    flex-direction: column;
   }
     .title-red {
       color:#E7D0D1;
@@ -375,3 +378,9 @@ footer {
   flex-direction: column;
   row-gap: 0.8rem;
 }
+
+
+
+/* #home-middle {
+  margin: 10% 2% 0 50%;
+} */
