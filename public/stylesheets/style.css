@@ -20,9 +20,10 @@ body {
   /* overflow: hidden; */
   font: 1rem 'Lucida Grande', Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  background-image: url('../images/cover-image6.jpeg');
+  background-image: url('../images/cover-image8.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: var(--text);
 }
 
@@ -86,7 +87,7 @@ textarea {
     display: flex;
     justify-content: flex-end;
     column-gap: 0.8vw;
-    font-size: 1.5vw;
+    /* font-size: 2rem; */
   }
 
   #navbar ul a {
@@ -107,7 +108,7 @@ textarea {
   display: flex;
   justify-content: center;
   overflow: auto;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .box {
@@ -230,9 +231,9 @@ textarea {
   text-align: center;
 }
 
-  #title h1 {
-    margin-bottom: 2%;
-    font-size: .9rem;
+#title h1 {
+  margin-bottom: 2%;
+    /* font-size: .9rem; */
   }
 
 #break {
@@ -247,7 +248,7 @@ textarea {
   #description {
     text-align: center;
     align-items: center;
-    font-size: .7rem;
+    /* font-size: .7rem; */
     margin-top: 5%;
     /* max-width: 50vw; */
     margin-bottom: 5vw;
@@ -282,25 +283,27 @@ textarea {
     padding: 4%;
     text-align: center;
     /* max-width: 40vw; */
-    font-size: .6rem;
+    /* font-size: .6rem; */
   }
     .details-box div {
       margin-bottom: 5%;
     }
 
+    .details-description {
+      font-size: .8rem;
+    }
 
   #signup {
     text-align: center;
     background-color: var(--tinted-red);
     border-radius: 2vw;
-    margin: 5vh 28vw;
+    margin: 5% 40%;
     padding: 1% 0 1% 0;
-    color: #333;
-    font-size: 1.5vw;
+    font-size: .7 rem;
   }
 
   #signup > a {
-    color: #333;
+    color: white;
   }
 
 .auth-link {
@@ -380,8 +383,31 @@ footer {
   row-gap: 0.8rem;
 }
 
+@media only screen and (min-width: 600px) {
+  #details {
+    flex-flow: row;
+  }
+  #title h1 {
+      font-size: 2.3rem;
+    }
+  .details-box {
+    padding: 2%;
+    text-align: center;
+    max-width: 40vw;
+    /* font-size: .6rem; */
+  }
 
+  #description {
+    font-size: 1.7rem;
+  }
+  
+  .details-description {
+    font-size: 1rem;
+  }
 
-/* #home-middle {
-  margin: 10% 2% 0 50%;
-} */
+  .details-box {
+    font-size: 1.5rem;
+    }
+
+  
+}
