@@ -4,9 +4,8 @@
 
 ## Introduction:
 
-_Heroes cannot save the world without their powers.
 Guitarists cannot make music without guitars.
-Share yours. Find others._
+Share yours. Find others.\_
 
 - <ins>Explore</ins>:
   You can explore the different guitars that other artists own or have created. As a member, you will be able to checkout other artists' guitars and admire your own collection.
@@ -22,4 +21,4 @@ Share yours. Find others._
 
 ## Try it!
 
-[https://guitarheroes-guithub.herokuapp.com/](url)
+[https://guithub.herokuapp.com/](url)
