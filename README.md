@@ -19,6 +19,8 @@ Share yours. Find others.\_
 - Authentication for members
 - Access to tailored functionality depending on whether you are a user or not, and whether you are checking someone else's content (e.g., delete, edit functionality).
 
-## Try it!
+## Demo!
 
-[https://guithub.herokuapp.com/](url)
+Please follow the link below to check it out!
+
+[https://guithub.herokuapp.com/](https://guithub.herokuapp.com/)
