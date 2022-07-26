@@ -73,14 +73,14 @@ textarea {
 
 /* navbar */
 
-.topnav {
+#navbar {
   overflow: hidden;
-  background-color: #333;
   position: relative;
 }
 
-.topnav #myLinks {
+#myLinks {
   display: none;
+  background-color: #b6737681;
 }
 
 .topnav a {
@@ -101,7 +101,9 @@ textarea {
 .icon img {
   width: 2rem;
   border-radius: 10px;
+  filter: invert(100%);
 }
+
 
 .topnav a:hover {
   color: black;  
@@ -114,9 +116,6 @@ textarea {
   padding-top: 4vw;
 }
 
-
-
-
 #wrapper {
   display: flex;
   justify-content: center;
@@ -126,6 +125,7 @@ textarea {
 
 .box {
   margin-bottom: 5rem;
+  margin-top: 1rem;
   padding: 2% 4%;
   border: 1px solid var(--tinted-red);
   box-shadow: 0px 4px 4px 1px var(--shadow-color);
@@ -165,6 +165,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   row-gap: 1rem;
+  margin-top: 1rem;
 }
 
 .form {
@@ -423,38 +424,38 @@ footer {
     font-size: 1.5rem;
     }
 
-    /* #navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid var(--tinted-red);
-  padding: 1.5vh 5%;
-  margin-bottom: 3vh;
-  background-color: var(--tinted-red);
-  border-radius: 1vw;
-} */
+    #navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--tinted-red);
+      padding: 1.5vh 5%;
+      margin-bottom: 3vh;
+      background-color: var(--tinted-red);
+      border-radius: 1vw;
+    } 
 
-  /* #navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    column-gap: 0.8vw;
-    /* font-size: 2rem; */
-  /* } */
+      #myLinks {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 0.8vw;
+        /* font-size: 2rem; */
+      }
 
-  /* #navbar ul a {
-    text-decoration: none;
-    color: white;
-  }
+      #navbar ul a {
+        text-decoration: none;
+        color: white;
+      }
 
-  #navbar h2 a{
-    font-family: "Luna", sans-serif;
-    padding-top: 4vw;
-  }
+      #navbar h2 a{
+        font-family: "Luna", sans-serif;
+        padding-top: 4vw;
+      }
 
-  #navbar h2 {
-    padding-top: 1vw;
-  }  */
+      #navbar h2 {
+        padding-top: 1vw;
+      }
 
 
   

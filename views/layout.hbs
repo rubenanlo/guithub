@@ -10,28 +10,25 @@
 
   <body>
 
-    <nav id='navbar'>
+    <nav>
       {{#if session.user}}
+        <div id='navbar'>
         <div class='topnav'>
           <a href='/' class='active'>GuitHub</a>
-          <div id='myLinks'>
-            <ul>
+          <div>
+            <ul id='myLinks'>
               <li>
                 <a href='/guitars'>Explore</a>
               </li>
-              |
               <li>
                 <a href='/profile/myCollection'>My Beauties</a>
               </li>
-              |
               <li>
                 <a href='/profile/create-guitar'>Create new Beauty</a>
               </li>
-              |
               <li>
                 <a href='/profile/{{session.user._id}}'>My profile</a>
               </li>
-              ||
               <li>
                 <a href='/auth/logout'>Log Out</a>
               </li>
@@ -39,7 +36,10 @@
           </div>
           <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
             <i class='fa fa-bars'>
-              <img src='./images/menu.png' alt='burger' /></i>
+              <img
+                src='https://res.cloudinary.com/dohwegeh8/image/upload/v1658780910/guitars/menu_qjrwu5.png'
+                alt='burger'
+              /></i>
           </a>
         </div>
         <script>
@@ -47,24 +47,34 @@
           x.style.display = "none"; } else { x.style.display = "block"; } }
         </script>
       {{else}}
-        <ul>
-          <li>
-            <h2><a href='/'>GuitHub</a></h2>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href='/guitars'>Explore</a>
-          </li>
-          ||
-          <li>
-            <a href='/auth/signup'>Sign up</a>
-          </li>
-          |
-          <li>
-            <a href='/auth/login'>Log In</a>
-          </li>
-        </ul>
+        <div class='topnav'>
+          <div >
+          <a href='/' class='active'>GuitHub</a>
+            <ul id="myLinks">
+              <li>
+                <a href='/guitars'>Explore</a>
+              </li>
+              <li>
+                <a href='/auth/signup'>Sign up</a>
+              </li>
+              <li>
+                <a href='/auth/login'>Log In</a>
+              </li>
+            </ul>
+          </div>
+          <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
+            <i class='fa fa-bars'>
+              <img
+                src='https://res.cloudinary.com/dohwegeh8/image/upload/v1658780910/guitars/menu_qjrwu5.png'
+                alt='burger'
+              /></i>
+          </a>
+        </div>
+        </div>
+        <script>
+          function myFunction() { var x = document.getElementById("myLinks"); if (x.style.display === "block") {
+          x.style.display = "none"; } else { x.style.display = "block"; } }
+        </script>
       {{/if}}
     </nav>
 
